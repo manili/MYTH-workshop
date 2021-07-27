@@ -246,6 +246,7 @@ In this lab the following snippet of code will be used for compilation and debug
     printf("7. Result should be equal to #1 but showing %lld due to incorrect casting\n", incorrect_cast_lli);
     
     //////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    printf("\n");
     
     return 0;
   }
