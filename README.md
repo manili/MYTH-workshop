@@ -187,7 +187,7 @@ Computers understand zeros and ones but human usually decimal numbers. In other 
 
 ## Signed and unsigned numbers
 
-A number in CPU may represent as signed or unsigned number. [Here](https://en.wikipedia.org/wiki/Signed_number_representations) is a very compelete reference for signed number presentation.
+A number in CPU may represent as signed or unsigned number. [Here](https://en.wikipedia.org/wiki/Signed_number_representations) is a very compelete reference for the signed and unsigned number presentation. Also [this](https://en.wikipedia.org/wiki/Signedness) is another good source for signedness
 
 ## Hands-on lab 2
 
