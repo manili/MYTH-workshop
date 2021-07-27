@@ -141,6 +141,5 @@ To compile the source code following template command will be used:
 
 ### RISCV GCC disassemble
 
-After compiling the source code it's time for disassembling and see what happend inside. Here our main question about difference of `O1` and `Ofast`
-will be answered. Following picture shows the result of compiling the code with `O1`:
+After compiling the source code it's time for disassembling and see what happend inside. Here our main question about difference of `-O1` and `-Ofast` will be answered. Following picture shows the result of compiling the code with `-O1`:
 
