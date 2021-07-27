@@ -63,7 +63,9 @@ Spike is the golden reference functional RISC-V ISA C++ sofware simulator. It pr
   5. Single-step debugging with support for viewing memory/register contents
   6. Multiple CPU support
   7. JTAG support
-  8. Highly extensible (add and test new instructions)[1](https://chipyard.readthedocs.io/en/latest/Software/Spike.html)
+  8. Highly extensible (add and test new instructions)
+
+[Reference](https://chipyard.readthedocs.io/en/latest/Software/Spike.html)
 
 ### Install Spike from the source code
 
@@ -143,3 +145,10 @@ To compile the source code following template command will be used:
 
 After compiling the source code it's time for disassembling and see what happend inside. Here our main question about difference of `-O1` and `-Ofast` options will be answered. Following picture shows the result of compiling the code with `-O1`:
 
+  ![O1](Images/Lab1/O1.png)
+
+And here is the result of compilation with `-Ofast` option:
+
+  ![Ofast](Images/Lab1/Ofast.png)
+
+It is observed that using `-Ofast` option may reduce the number of instructions from 15 to 12 campared to `-O1`. [This](https://gcc.gnu.org/onlinedocs/gcc/Optimize-Options.html) is a compelete reference for the GCC optimization options.
