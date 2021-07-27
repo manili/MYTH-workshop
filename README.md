@@ -272,3 +272,37 @@ So, it is system call interface used by the application program to access the re
 
 ## Hands-on lab 3
 
+In this lab ABI will be studied with two diffrent ways. First, Spike will be used to simulate the program like before. Second, as a new way of simulation, an RTL level RISC-V core named PiceRV32 will run the code and return the result. The results of two diffrent methods must be the same, which provides a way of verification for Spike and PicoRV32 functionality. The following are the two snippet codes will be used in the lab. 
+
+Here is the `1to9custom.c` file:
+
+  ```
+  #include <stdio.h>
+  
+  extern int sum(int x, int y);
+  
+  int main() {
+    int result = 0;
+    int count = 9;
+    result = sum(0x0, count+1);
+    printf("Sum of number from 1 to %d is %d\n", count, result);
+  }
+  ```
+
+Here is the `sum.s` file:
+
+  ```
+  .section .text
+  .global sum
+  .type sum, @function
+
+  sum:
+    add 	a4, a0, zero //Initialize sum register a4 with 0x0
+    add 	a2, a0, a1   // store count of 10 in register a2. Register a1 is loaded with 0xa (decimal 10) from main program
+    add	a3, a0, zero // initialize intermediate sum register a3 by 0
+  loop:	add 	a4, a3, a4   // Incremental addition
+    addi 	a3, a3, 1    // Increment intermediate register by 1	
+    blt 	a3, a2, loop // If a3 is less than a2, branch to label named <loop>
+    add	a0, a4, zero // Store final result to register a0 so that it can be read by main program
+    ret
+  ```
