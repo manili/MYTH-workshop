@@ -171,8 +171,8 @@ It is also possible to use Spike for debugging purposes by following command:
 There are some very important commands for debugging:
 
   ```
-  until pc 0 [MEMORY ADDRESS] //Set a breakpoint on [MEMORY ADDRESS]
-  Enter Key //Step during debugging process
+  until pc 0 [MEMORY ADDRESS] //Sets a breakpoint on [MEMORY ADDRESS]
+  Enter Key //Steps during debugging process
   reg 0 [REGISTER IDENTIFICATION] //Show contents of specified register in [REGISTER IDENTIFICATION]
   q //Exit debugging 
   ```
