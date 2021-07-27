@@ -260,3 +260,15 @@ When `numberRepresentation.c` has been compiled (just like how we did on [RISCV 
 During the lab there was an important question about reason of inequality between calculated maximum/minimum of 64-bit signed integer and the result of the program. As it may be seen in the program, the problem occures due to wrong type casting. So to find a proper data type, here is the table for using Integer on C programming language:
 
   ![Integer_Data_Types_Table](Images/Lab2/IntegerDataTypes.png)
+
+# Introduction to ABI
+
+An Application Binary Interface is a set of rules enforced by the Operating System on a specific architecture. So, Linker converts relocatable machine code to absolute machine code via ABI interface specific to the architecture of machine.
+
+So, it is system call interface used by the application program to access the registers specific to architecture. Overhere the architecture is RISC-V, so to access 32 registers of RISC-V below is the table which shows the calling convention (ABI name) given to registers for the application programmer to use.
+[(Image source)](https://riscv.org/wp-content/uploads/2015/01/riscv-calling.pdf)
+
+![calling_convention](Images/calling_convetion.png)
+
+## Hands-on lab 3
+
