@@ -216,8 +216,11 @@ In this lab the following snippet of code will be used for compilation and debug
     unsigned long long int underflow_ulli = (unsigned long long int) (pow(2, 10) * -1);
     printf("5. The underflow representation of a number by the unsigned long long int is %llu\n", underflow_ulli);
     
+    unsigned long long int incorrect_cast_ulli = (unsigned int) (pow(2, 64) - 1);
+    printf("6. Result should be equal to #1 but showing %llu due to incorrect casting\n", incorrect_cast_ulli);
+    
     //////////////////////////////////////////////////////////////////////////////////////////////////////////////
-    printf("\n\n");
+    printf("\n///////////////////////////////////////////////////////////////////////////////////////////////\n");
     //////////////////////////////////////////// long long int tests: ////////////////////////////////////////////
     printf("Testing Long Long Int:\n\n");
     
@@ -238,6 +241,9 @@ In this lab the following snippet of code will be used for compilation and debug
     
     long long int underflow_lli = (long long int) (pow(2, 64) * -1);
     printf("6. The underflow representation of a number by the long long int is %lld\n", underflow_lli);
+    
+    long long int incorrect_cast_lli = (int) (pow(2, 63) * -1);
+    printf("7. Result should be equal to #1 but showing %lld due to incorrect casting\n", incorrect_cast_lli);
     
     //////////////////////////////////////////////////////////////////////////////////////////////////////////////
     
