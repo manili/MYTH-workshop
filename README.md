@@ -191,3 +191,56 @@ A number in CPU may represent as signed or unsigned number. [Here](https://en.wi
 
 ## Hands-on lab 2
 
+In this lab the following snippet of code will be used for compilation and debug. Here is the code snippet:
+
+  ```
+  #include <stdio.h>
+  #include <math.h>
+  
+  int main() {
+    //////////////////////////////////////// unsigned long long int tests: ///////////////////////////////////////
+    
+    unsigned long long int max_ulli = (unsigned long long int) (pow(2, 64) - 1);
+    printf("Highest number represented by the unsigned long long int is %llu\n", max_ulli);
+    
+    unsigned long long int min_ulli = (unsigned long long int) (pow(2, 0) - 1);
+    printf("Lowest number represented by the unsigned long long int is %llu\n", min_ulli);
+    
+    unsigned long long int overflow_ulli = (unsigned long long int) (pow(2, 65) - 1);
+    printf("The overflow representation of a number by the unsigned long long int is %llu\n", overflow_ulli);
+    
+    unsigned long long int inbound_ulli = (unsigned long long int) (pow(2, 10) - 1);
+    printf("An inbound number for the unsigned long long int is %llu\n", inbound_ulli);
+    
+    unsigned long long int underflow_ulli = (unsigned long long int) (pow(2, 10) * -1);
+    printf("The underflow representation of a number by the unsigned long long int is %llu\n", underflow_ulli);
+    
+    //////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    
+    //////////////////////////////////////////// long long int tests: ////////////////////////////////////////////
+    
+    long long int max_lli = (long long int) (pow(2, 63) - 1);
+    printf("Highest number represented by the long long int is %lld\n", max_lli);
+    
+    long long int min_lli = (long long int) (pow(2, 63) * -1);
+    printf("Lowest number represented by the long long int is %lld\n", min_lli);
+    
+    long long int overflow_lli = (long long int) (pow(2, 64) - 1);
+    printf("The overflow representation of a number by the long long int is %lld\n", overflow_lli);
+    
+    long long int inbound1_lli = (long long int) (pow(2, 10) - 1);
+    printf("A posetive inbound number for the long long int is %lld\n", inbound1_lli);
+    
+    long long int inbound2_lli = (long long int) (pow(2, 10) * -1);
+    printf("A negative inbound number for the long long int is %lld\n", inbound2_lli);
+    
+    long long int underflow_lli = (long long int) (pow(2, 64) * -1);
+    printf("The underflow representation of a number by the long long int is %lld\n", underflow_lli);
+    
+    //////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    
+    return 0;
+  }
+  ```
+
+The code snippet will be stored in a file named `numberRepresentation.c`. This file will be used during this hands-on lab.
