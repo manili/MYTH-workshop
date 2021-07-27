@@ -132,7 +132,7 @@ To compile the source code following template command will be used:
   $ riscv64-unknown-elf-gcc -O[COMPILER OPTIONS] -mabi=[ABI SPECIFIER] -march=[TARGET ARCHITECTURE] -o [OUTOUT FILE] [INPUT FILES]
   ```
   
-[Here](https://www.sifive.com/blog/all-aboard-part-1-compiler-args) is the reference the compiler options. So in this case here are two sample commands to compile the code:
+[Here](https://www.sifive.com/blog/all-aboard-part-1-compiler-args) is the reference for the compiler options. So in this case here are two sample commands to compile the code:
   
   ```
   $ riscv64-unknown-elf-gcc -O1 -mabi=lp64 -march=rv64i -o sum1ton.o sum1ton.c
@@ -140,3 +140,7 @@ To compile the source code following template command will be used:
   ```
 
 ### RISCV GCC disassemble
+
+After compiling the source code it's time for disassembling and see what happend inside. Here our main question about difference of `O1` and `Ofast`
+will be answered. Following picture shows the result of compiling the code with `O1`:
+
