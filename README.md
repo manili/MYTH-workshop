@@ -253,3 +253,10 @@ In this lab the following snippet of code will be used for compilation and debug
   ```
 
 The code snippet will be stored in a file named `numberRepresentation.c`. This file will be used during this hands-on lab.
+When `numberRepresentation.c` has been compiled (just like how we did on [RISCV GCC compile](#riscv-gcc-compile) section), it's time to execute it by Spike simulator (just like how we did on [Spike simulation and debug](#spike-simulation-and-debug) section). The result will be something like:
+
+  ![integer_representation](Images/Lab2/IntegerRepresentation.png)
+
+During the lab there was an important question about reason of inequality between calculated maximum/minimum of 64-bit signed integer and the result of the program. As it may be seen in the program, the problem occures due to wrong type casting. So to find a proper data type, here is the table for using Integer on C programming language:
+
+  ![Integer_Data_Types_Table](Images/Lab2/IntegerDataTypes.png)
