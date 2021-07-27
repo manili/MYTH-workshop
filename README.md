@@ -153,3 +153,30 @@ And here is the result of compilation with `-Ofast` option:
   ![Ofast](Images/Lab1/Ofast.png)
 
 It is observed that using `-Ofast` option may reduce the number of instructions from 15 to 12 campared to `-O1`. [This](https://gcc.gnu.org/onlinedocs/gcc/Optimize-Options.html) is a compelete reference for the GCC compiler optimization options.
+
+### Spike simulation and debug
+
+It is possible to use Spike for both simulation and debugging. Following command will run the RISC-V application on x86_64 architecture host machine and provide the result to the end user:
+
+  ```
+  spike pk [APPLICATION NAME]
+  ```
+
+It is also possible to use Spike for debugging purposes by following command:
+
+  ```
+  spike -d pk [APPLICATION NAME]
+  ```
+
+There are some very important commands for debugging:
+
+  ```
+  until pc 0 [MEMORY ADDRESS] //Set a breakpoint on [MEMORY ADDRESS]
+  Enter Key //Step during debugging process
+  reg 0 [REGISTER IDENTIFICATION] //Show contents of specified register in [REGISTER IDENTIFICATION]
+  q //Exit debugging 
+  ```
+  
+Following picture shows an example of using Spike, both in simulation and debugging modes:
+
+  ![spike](Images/Lab1/SpikeDebugging.png)
