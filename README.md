@@ -180,3 +180,14 @@ There are some very important commands for debugging:
 Following picture shows an example of using Spike, both in simulation and debugging modes:
 
   ![spike](Images/Lab1/SpikeDebugging.png)
+
+# Introduction to integer number representation
+
+Computers understand zeros and ones but human usually decimal numbers. In other words there should be existed a way to convert decimal numbers to binary and vice versa. Agorithms like [these](https://www.electronics-tutorials.ws/binary/bin_2.html) will do the job for us.
+
+## Signed and unsigned numbers
+
+A number in CPU may represent as signed or unsigned number. [Here](https://en.wikipedia.org/wiki/Signed_number_representations) is a very compelete reference for signed number presentation.
+
+## Hands-on lab 2
+
