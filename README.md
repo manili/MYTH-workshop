@@ -329,10 +329,15 @@ In this lab user will use a function written in assembly language to calculate t
   ```
 And here is the result:
 
-  
+  ![1to9custom_spike_run](Images/Lab3/Part1/1to9custom_spike_run.png)
 
 It's time to disassemble the program and see what's happened inside by the following command:
 
   ```
   riscv64-unknown-elf-objdump -d 1to9custom.o
   ```
+And these are the main and sum functions:
+
+  ![1to9custom_func_main](Images/Lab3/Part1/1to9custom_func_main.png)
+  
+  ![1to9custom_func_sum](Images/Lab3/Part1/1to9custom_func_sum.png)
