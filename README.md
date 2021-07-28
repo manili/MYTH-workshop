@@ -341,3 +341,20 @@ And these are the main and sum functions:
   ![1to9custom_func_main](Images/Lab3/Part1/1to9custom_func_main.png)
   
   ![1to9custom_func_sum](Images/Lab3/Part1/1to9custom_func_sum.png)
+
+### Sumation of 1 to N using ASM on PicoRV32
+
+For the first time in this workshop, participants are going to test a program on a real tiny RISC-V core using iVerilog. PicoRV32 is a small RISC-V core developed by Clifford Wolf in verilog language. It is pissible to use iVerilog for PicoRV32 functional level simulation. Here are the commands to do so:
+
+  ```
+  cd
+  git clone https://github.com/kunalg123/riscv_workshop_collaterals
+  cd riscv_workshop_collaterals/labs/
+  chmod +x rv32im.sh
+  ./rv32im.sh
+  ```
+These commands will download the source code, compile them and launch the simulation process. The following shows the result of executing these commands:
+
+  ![1to9custom_picorv32_run](Images/Lab3/Part2/1to9custom_picorv32_run.png)
+  
+As it could be seen on the image, the process does not support `N` more than 3.
