@@ -144,7 +144,19 @@ To compile the source code following template command will be used:
 
 ### RISCV GCC disassemble
 
-After compiling the source code it's time for disassembling and see what happend inside. Here our main question about difference of `-O1` and `-Ofast` options will be answered. Following picture shows the result of compiling the code with `-O1`:
+After compiling the source code it's time for disassembling and see what happend inside. The following command demonstrates how to disassemble the code:
+
+  ```
+  riscv64-unknown-elf-objdump -d [INPUT NAME] | less #Use less command to see the result page by page and search in the text by pressing / key
+  ```
+
+So in this case here is the proper command to disassemble:
+
+  ```
+  riscv64-unknown-elf-objdump -d sum1ton.o | less
+  ```
+
+Following picture shows the result of compiling the code with `-O1`:
 
   ![O1](Images/Lab1/O1.png)
 
@@ -152,7 +164,7 @@ And here is the result of compilation with `-Ofast` option:
 
   ![Ofast](Images/Lab1/Ofast.png)
 
-It is observed that using `-Ofast` option may reduce the number of instructions from 15 to 12 campared to `-O1`. [This](https://gcc.gnu.org/onlinedocs/gcc/Optimize-Options.html) is a compelete reference for the GCC compiler optimization options.
+Now our main question about the difference of `-O1` and `-Ofast` options could be answered. It is observed that using `-Ofast` option may reduce the number of instructions from 15 to 12 campared to `-O1`. [This](https://gcc.gnu.org/onlinedocs/gcc/Optimize-Options.html) is a compelete reference for the GCC compiler optimization options.
 
 ### Spike simulation and debug
 
@@ -283,8 +295,8 @@ Here is the `1to9custom.c` file:
   
   int main() {
     int result = 0;
-    int count = 9;
-    result = sum(0x0, count+1);
+    int N = 9;
+    result = sum(0x0, N + 1);
     printf("Sum of number from 1 to %d is %d\n", count, result);
   }
   ```
@@ -305,4 +317,22 @@ Here is the `sum.S` file (WARNING: you must use *.S not *.s otherwise the assemb
     blt 	a3, a2, loop // If a3 is less than a2, branch to label named <loop>
     add	a0, a4, zero // Store final result to register a0 so that it can be read by main program
     ret
+  ```
+
+### Sumation of 1 to N using ASM
+
+In this lab user will use a function written in assembly language to calculate the summation of 1 to N. The `N` variable will be sent by the C program as an argument of the `sum` function. Here is how to compile and simulate the program:
+
+  ```
+  riscv64-unknown-elf-gcc -O1 -mabi=lp64 -march=rv64i -o 1to9custom.o 1to9custom.c sum.S
+  spike pk 1to9custom.o
+  ```
+And here is the result:
+
+  
+
+It's time to disassemble the program and see what's happened inside by the following command:
+
+  ```
+  riscv64-unknown-elf-objdump -d 1to9custom.o
   ```
