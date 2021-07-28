@@ -19,8 +19,8 @@ A 5-day workshop to implement a RISC-V based processor named MYTH from both SW a
   - [Hands-on lab 2](#hands-on-lab-2)
 - [Introduction to ABI](#introduction-to-abi)
   - [Hands-on lab 3](#hands-on-lab-3)
-    - [New algorithm for sumation of 1 to N using ASM](#new-algorithm-for-sumation-of-1-to-n-using-asm)
-    - [Run a C program on RISC-V using iVerilog](#run-a-c-program-on-risc-v-using-iverilog)
+    - [Sumation of 1 to N using ASM on Spike](#sumation-of-1-to-n-using-asm-on-spike)
+    - [Sumation of 1 to N using ASM on PicoRV32](#sumation-of-1-to-n-using-asm-on-picorv32)
 
 # Tools needed for the workshop
 
@@ -319,7 +319,7 @@ Here is the `sum.S` file (WARNING: you must use *.S not *.s otherwise the assemb
     ret
   ```
 
-### Sumation of 1 to N using ASM
+### Sumation of 1 to N using ASM on Spike
 
 In this lab user will use a function written in assembly language to calculate the summation of 1 to N. The `N` variable will be sent by the C program as an argument of the `sum` function. Here is how to compile and simulate the program:
 
