@@ -373,8 +373,9 @@ Transaction-Level Verilog (TL-Verilog) is an emerging extension to SystemVerilog
 
 ## What is Makerchip
 
-Makerchip provides free and instant access to the latest tools both from a web browser and desktop computer. This includes open-source tools and proprietary ones.
+Makerchip provides free and instant access to the latest tools both from a web browser and desktop computer. This includes open-source tools and proprietary ones. [Reference](http://makerchip.com)
 
   ![MakerchipIDE](http://makerchip.com/assets/homepage/MakerchipSplash.png)
 
 ## Hands-on lab 4
+
