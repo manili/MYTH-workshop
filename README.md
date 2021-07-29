@@ -415,6 +415,6 @@ Pipelining is so simpler in TLV because of its timming and functionality separat
 
 ### Validity
 
-Duting the previous section it has been observed that sometimes there should be a signal to validate the output of a process and prevents committing the result into respective storage (e.g. memory, register, FFs, etc...) as needed. By the special method in TLV to validate the outputs, it is so much easier to do so. In this section, the custom generated valid signal from the previous section which has been provided by the user is going to be replaced by the new methodology of the TLV. Here is the result:
+Duting the previous section it has been observed that sometimes there should be a signal to validate the output of a process and prevents committing the result into respective storage (e.g. memory, register, FFs, etc...) as needed. By the special method in TLV to validate the outputs, it is so much easier to do so. In this section, the custom generated valid signal from the previous section which has been provided by the user is going to be replaced by the new methodology of the TLV. At the end the section a simple memory has been added for saving the output on the demand. Here is the final result of the lab:
 
   ![calculator_validity](Images/Lab4/calculator_validity.png)
