@@ -396,7 +396,7 @@ In this part of the lab the calculator logic is going to be implemented using pu
 
 The main element of the sequential circuits is the D-FlipFlop of DFF. This digital element which is built by the simpler elements (e.g. AND, OR, etc...) itself, introduced current-state dependency feature. These elements could retain their current-state (and propagate as their output) until the next positive or negative edge of the clock (based on their structure). Here is a picture of the standard template for designing digital ICs contains both combinational or sequential logics:
 
-  ![standard_design](Images/standard_design)
+  ![standard_design_process](Images/Lab4/standard_design_process.png)
 
 In this lab the calculator is developed to laverage the FFs to store the final results and use them again as an input operand. Here is the results:
 
@@ -404,6 +404,17 @@ In this lab the calculator is developed to laverage the FFs to store the final r
 
 ### Pipelined logics
 
+Designing combinational and sequential logics is fairly straightforward, however there are some cases which this straightforward process become a lot tricky. As an example when the combinational path between two FFs becomes too long. Another example is when an input signal is received one side of the die and should be processed on the other side. Generally too long signal path will lead to slower clock speed, bacause waiting for signal propagation is needed. In these cases pipelining is here to help.
+Pipelining is a technique which breaks a very long signal path into smaller pieces by pushing intermediate FFs in between. By doing this technique the clock frequency could be faster and total throughput will be increased. Here is an example of how pipelining could work:
 
+  ![pipelining_sample](Images/Lab4/pipelining_sample.png)
+
+Pipelining is so simpler in TLV because of its timming and functionality separation nature. So it is very easy to retiming the design (which relates to physical aspects), with one hundred precent granteed that the functionalities remain the same. In this step of the calculator designing process, the calculator will become pipelined for faster clock frequency and more throughput. Here is the result:
+
+  ![calculator_pipelined](Images/Lab4/calculator_pipelined.png)
 
 ### Validity
+
+Duting the previous section it has been observed that sometimes there should be a signal to validate the output of a process and prevents committing the result into respective storage (e.g. memory, register, FFs, etc...) as needed. By the special method in TLV to validate the outputs, it is so much easier to do so. In this section, the custom generated valid signal from the previous section which has been provided by the user is going to be replaced by the new methodology of the TLV. Here is the result:
+
+  ![calculator_validity](Images/Lab4/calculator_validity.png)
