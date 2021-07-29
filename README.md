@@ -21,6 +21,10 @@ A 5-day workshop to implement a RISC-V based processor named MYTH from both SW a
   - [Hands-on lab 3](#hands-on-lab-3)
     - [Summation of 1 to N using ASM on Spike](#summation-of-1-to-n-using-asm-on-spike)
     - [Summation of 1 to N using ASM on PicoRV32](#summation-of-1-to-n-using-asm-on-picorv32)
+- [Digital logic with TL-Verilog and Makerchip](#digital-logic-with-tl-verilog-and-makerchip)
+  - [What is TL-Verilog](#what-is-tl-verilog)
+  - [What is Makerchip](#what-is-makerchip)
+  - [Hands-on lab 4](#hands-on-lab-4)
 
 # Tools needed for the workshop
 
@@ -358,3 +362,19 @@ These commands will download the source code, compile them and launch the simula
   ![1to9custom_picorv32_run](Images/Lab3/Part2/1to9custom_picorv32_run.png)
   
 As it could be seen on the image, the process does not support `N` more than 3.
+
+# Digital logic with TL-Verilog and Makerchip
+
+In this day TL-Verilog and the Makerchip IDE will be used to learn basic concepts of the digital design and creating a simple caculator logic. These basic concepts will be used during day four and five to create the RISC-V core.
+
+## What is TL-Verilog
+
+Transaction-Level Verilog (TL-Verilog) is an emerging extension to SystemVerilog that supports a new design methodology, called transaction-level design. A transaction, in this methodology, is an entity that moves through structures like pipelines, arbiters, and queues, A transaction might be a machine instruction, a flit of a packet, or a memory read/write. Transaction logic, like packet header decode or instruction execution, that operates on the transaction can be placed anywhere along the transaction's flow. Tools produce the logic to carry signals through their flows to stitch the transaction logic. [Reference](https://arxiv.org/abs/1811.01780)
+
+## What is Makerchip
+
+Makerchip provides free and instant access to the latest tools both from a web browser and desktop computer. This includes open-source tools and proprietary ones.
+
+  ![MakerchipIDE](http://makerchip.com/assets/homepage/MakerchipSplash.png)
+
+## Hands-on lab 4
