@@ -25,6 +25,10 @@ A 5-day workshop to implement a RISC-V based processor named MYTH from both SW a
   - [What is TL-Verilog](#what-is-tl-verilog)
   - [What is Makerchip](#what-is-makerchip)
   - [Hands-on lab 4](#hands-on-lab-4)
+    - [Combinational logics](#combinational-logics)
+    - [Sequential logics](#sequential-logics)
+    - [Pipelined logics](#pipelined-logics)
+    - [Validity](#validity)
 
 # Tools needed for the workshop
 
@@ -379,3 +383,27 @@ Makerchip provides free and instant access to the latest tools both from a web b
 
 ## Hands-on lab 4
 
+In this lab a basic digital circuit which is a calculator will be implemented by using both TL-Verilog and Makerchip IDE. At the end of the lab users can have a great understanding of basics of digital design, TLV, and Makerchip environment. Also it is possible for the users to implement such design on their on PCs.
+
+### Combinational logics
+
+Logic gates are electronic elements which could be used to implement boolean algebra functions. Those includes NOT, AND, OR, NAND, NOR, XOR, and XNOR gates. Combinational logic is a type of digital logic which is implemented by these gates, where the output is a pure function of the present input only. In other words the next-state (output) of the logic does not dependent on the current-state (input).
+In this part of the lab the calculator logic is going to be implemented using pure combinational circuit and the following picture shows the result:
+
+  ![calculator_combinational](Images/Lab4/calculator_combinational.png)
+
+### Sequential logics
+
+The main element of the sequential circuits is the D-FlipFlop of DFF. This digital element which is built by the simpler elements (e.g. AND, OR, etc...) itself, introduced current-state dependency feature. These elements could retain their current-state (and propagate as their output) until the next positive or negative edge of the clock (based on their structure). Here is a picture of the standard template for designing digital ICs contains both combinational or sequential logics:
+
+  ![standard_design](Images/standard_design)
+
+In this lab the calculator is developed to laverage the FFs to store the final results and use them again as an input operand. Here is the results:
+
+  ![calculator_sequential](Images/Lab4/calculator_sequential.png)
+
+### Pipelined logics
+
+
+
+### Validity
