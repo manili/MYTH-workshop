@@ -470,7 +470,7 @@ In this phase (usually) 2 inputs will be fed in the ALU and proper calculations 
 
 ### Write register file
 
-Last but not least is the Write-back to register file process, also called WB step.
+Last but not least is the process of write-back to the register file, also called WB step. At the end of the day the results provided by the ALU needs to be commited to the register file to be used for the next cycles. The `RD` or destination register will provide the address of the register that needs to be written. This is the step number 6 in the schematic.
 
 ## Hands-on lab 5
 
