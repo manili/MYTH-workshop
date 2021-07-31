@@ -499,11 +499,13 @@ As it mentioned before, currently the micro-arch is based on signle cycle design
 
 # Pipelining MYTH processor
 
-
+As it been seen in day 3 (pipelining section), pipelining could increase the overall throughput by increasing the clock frequency and executing one instruction per cycle in an ideal situation. For example, an ideal pipeline which has `K stages` and each takes `N nano seconds` to be executed, will have a speed-up of `K`. In day 5 the MYTH will be redesigned to support pipelining micro-architecture instead of the old-school single cycle.
 
 ## Introduction to MYTH pipelining
 
+TLV -the language MYTH has been developed with- is capable of retiming the design with 100% granteed that the functionality will not be changed. Leveraging this feature it is possible to redesign the MYTH micro-arch, introducing pipelining features. Here is a schamatic of what the MYTH is going to be look like by the end of the day:
 
+  ![MYTH_Pipeline](Images/Lab6/MYTH_Pipeline.png)
 
 ## Pipelining hazards
 
