@@ -30,6 +30,22 @@ A 5-day workshop to implement a RISC-V based processor named MYTH from both SW a
     - [Pipelined logics](#pipelined-logics)
     - [Validity](#validity)
     - [Lab 4 final result](#lab-4-final-result)
+- [RISCV-based CPU named MYTH](#riscv-based-cpu-named-myth)
+  - [Introduction to MYTH micro-architecture](#introduction-to-myth-micro-architecture)
+    - [Fetch process](#fetch-process)
+    - [Decode process](#decode-process)
+    - [Read process](#read-process)
+    - [Execute process](#execute-process)
+    - [Write-back process](#write-back-process)
+  - [Hands-on lab 5](#hands-on-lab-5)
+- [Pipelining MYTH processor](#pipelining-myth-processor)
+  - [Introduction to MYTH pipelining](#introduction-to-myth-pipelining)
+  - [Pipelining hazards](#pipelining-hazards)
+    - [Structural hazard](#structural-hazard)
+    - [Control hazard](#control-hazard)
+    - [Data hazard](#data-hazard)
+  - [Hands-on lab 6](#hands-on-lab-6)
+- Acknowledgements
 
 # Tools needed for the workshop
 
@@ -425,3 +441,65 @@ Duting the previous section it has been observed that sometimes there should be 
 At the end of the lab a simple memory has been added for saving the output on the demand. Here is the final result of the lab:
 
   ![calculator_final](Images/Lab4/calculator_final.png)
+
+# RISCV-based CPU named MYTH
+
+
+
+## Introduction to MYTH micro-architecture
+
+
+
+### Fetch process
+
+
+
+### Decode process
+
+
+
+### Read process
+
+
+
+### Execute process
+
+
+
+### Write-back process
+
+
+
+## Hands-on lab 5
+
+
+
+# Pipelining MYTH processor
+
+
+
+## Introduction to MYTH pipelining
+
+
+
+## Pipelining hazards
+
+
+
+### Structural hazard
+
+
+
+### Control hazard
+
+
+
+### Data hazard
+
+
+
+## Hands-on lab 6
+
+
+
+# Acknowledgements
