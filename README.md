@@ -503,3 +503,5 @@ At the end of the lab a simple memory has been added for saving the output on th
 
 
 # Acknowledgements
+- [Kunal Ghosh](https://github.com/kunalg123), Co-founder, VSD Corp. Pvt. Ltd.
+- [Steve Hoover](https://github.com/stevehoover), Founder, Redwood EDA
