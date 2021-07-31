@@ -32,11 +32,11 @@ A 5-day workshop to implement a RISC-V based processor named MYTH from both SW a
     - [Lab 4 final result](#lab-4-final-result)
 - [RISCV-based CPU named MYTH](#riscv-based-cpu-named-myth)
   - [Introduction to MYTH micro-architecture](#introduction-to-myth-micro-architecture)
-    - [Fetch process](#fetch-process)
-    - [Decode process](#decode-process)
-    - [Read process](#read-process)
-    - [Execute process](#execute-process)
-    - [Write-back process](#write-back-process)
+    - [Fetch](#fetch)
+    - [Decode](#decode)
+    - [Read register file](#read-register-file)
+    - [Execute](#execute)
+    - [Write register file](#write-register-file)
   - [Hands-on lab 5](#hands-on-lab-5)
 - [Pipelining MYTH processor](#pipelining-myth-processor)
   - [Introduction to MYTH pipelining](#introduction-to-myth-pipelining)
@@ -450,23 +450,23 @@ At the end of the lab a simple memory has been added for saving the output on th
 
 
 
-### Fetch process
+### Fetch
 
 
 
-### Decode process
+### Decode
 
 
 
-### Read process
+### Read register file
 
 
 
-### Execute process
+### Execute
 
 
 
-### Write-back process
+### Write register file
 
 
 
