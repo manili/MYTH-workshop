@@ -540,6 +540,20 @@ A data hazard is any condition in which either the source or the destination ope
 
 ## Hands-on lab 6
 
+In this lab, new changes will be introduced to MYTH making it a pipeline RV32I compatible processor. Techniques like pipeline stalling and data forwarding have been used to handle the control and data hazards. This micro-arch does not introduces any structural hazards. Here are some pictures of the design implementation:
+
+  1. Introducing a new design with the assumption of hazardless pipeline:
+
+  ![MYTH_Hazardless_Pipeline](Images/Lab6/MYTH_Hazardless_Pipeline.png)
+
+  2. Solving data and control hazards by introduting valid signal and data-forwarding technique:
+
+  ![MYTH_Hazard_Pipeline](Images/Lab6/MYTH_Hazard_Pipeline.png)
+
+  3. Complete the MYTH by adding D-Memory and ALU completion:
+
+  ![MYTH_Complete](Images/Lab6/MYTH_Complete.png)
+
 
 # Wrap up
 
