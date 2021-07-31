@@ -45,7 +45,7 @@ A 5-day workshop to implement a RISC-V based processor named MYTH from both SW a
     - [Control hazard](#control-hazard)
     - [Data hazard](#data-hazard)
   - [Hands-on lab 6](#hands-on-lab-6)
-- Acknowledgements
+- Acknowledgements(#acknowledgements)
 
 # Tools needed for the workshop
 
