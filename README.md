@@ -450,7 +450,7 @@ At the end of the lab a simple memory has been added for saving the output on th
 
 RISC-V is an ISA, so it doesn't talk about how to implement the actual design. CPU designers take the ISA as their input and decide how to implement hardware (almost always) in RTL. In this day a single cycle design of the ISA will be implemented named MYTH. MYTH will become pipeline in the next day. Here is a schematic of the design:
 
-  ![MYTH_Schematic](#Images/Lab5/MYTH_Schematic.png)
+  ![MYTH_Schematic](Images/Lab5/MYTH_Schematic.png)
 
 ### Fetch
 
@@ -474,7 +474,27 @@ Last but not least is the process of write-back to the register file, also calle
 
 ## Hands-on lab 5
 
+As it mentioned before, currently the micro-arch is based on signle cycle design which means all the 5 phases previously mentioned need to be accomplished in one pretty long single cycle of the clock. Following pictures walk you through the process implementation:
 
+  1. Fetching:
+
+  ![Fetching](Images/Lab5/Fetching.png)
+  
+  2. Decoding:
+
+  ![Decoding](Images/Lab5/Decoding.png)
+
+  3. Read RF:
+
+  ![Read_RF](Images/Lab5/Read_RF.png)
+
+  4. Executing:
+
+  ![Executing](Images/Lab5/Executing.png)
+
+  5. Write RF:
+
+  ![Write_RF](Images/Lab5/Write_RF.png)
 
 # Pipelining MYTH processor
 
