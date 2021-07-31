@@ -510,18 +510,33 @@ TLV -the language MYTH has been developed with- is capable of retiming the desig
 ## Pipelining hazards
 
 
+Pipeline hazards are situations that prevent the next instruction in the instruction stream from executing during its designated clock cycles.
+Any condition that causes a stall in the pipeline operations can be called a hazard.
+There are primarily three types of hazards:
+
+1. Structural Hazards
+2. Control Hazards
+3. Data Hazards
+
+[Reference](https://www.ques10.com/p/10191/short-note-on-pipeline-hazard-or-what-are-the-ty-1)
 
 ### Structural hazard
 
+This situation arises mainly when two instructions require a given hardware resource at the same time and hence for one of the instructions the pipeline needs to be stalled.
 
+[Reference](https://www.ques10.com/p/10191/short-note-on-pipeline-hazard-or-what-are-the-ty-1)
 
 ### Control hazard
 
+The problem arises when one of the instructions is a branching instruction to some other memory location. Thus all the instruction fetched in the pipeline from consecutive memory locations are invalid now and need to removed(also called flushing of the pipeline).This induces a stall till new instructions are again fetched from the memory address specified in the branch instruction.
 
+[Reference](https://www.ques10.com/p/10191/short-note-on-pipeline-hazard-or-what-are-the-ty-1)
 
 ### Data hazard
 
+A data hazard is any condition in which either the source or the destination operands of an instruction are not available at the time expected in the pipeline. As a result of which some operation has to be delayed and the pipeline stalls. Whenever there are two instructions one of which depends on the data obtained from the other.
 
+[Reference](https://www.ques10.com/p/10191/short-note-on-pipeline-hazard-or-what-are-the-ty-1)
 
 ## Hands-on lab 6
 
