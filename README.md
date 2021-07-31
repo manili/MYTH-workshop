@@ -448,27 +448,29 @@ At the end of the lab a simple memory has been added for saving the output on th
 
 ## Introduction to MYTH micro-architecture
 
+RISC-V is an ISA, so it doesn't talk about how to implement the actual design. CPU designers take the ISA as their input and decide how to implement hardware (almost always) in RTL. In this day a single cycle design of the ISA will be implemented named MYTH. MYTH will become pipeline in the next day. Here is a schematic of the design:
 
+  ![MYTH_Schematic](#Images/Lab5/MYTH_Schematic.png)
 
 ### Fetch
 
-
+The process of fetching new instruction from the memory (I-Memory) and updating the Program Counter (PC) is called Fetching process. This way the new instruction will be got out of the memory memory and will be tried to be decoded in the next phase. In the picture of micro-arch schematic fetch is the combination of step 1 and step 2.
 
 ### Decode
 
-
+The process of extracting diffrent parts of the fetched instruction and generating the data and control signals out of it is called Decoding process. As an example, during this process the CPU would identify whether the instruction is R-Type or not. Step 3 and Step 7 are some parts of the whole process in this phase.
 
 ### Read register file
 
-
+One of the most important outputs of the decoding process is the addresses of the registers to be read in this phase. Register file will take these addresses as its input to provide the datapath with proper contents of the registers. For example, if `RF[13] = 0x20` and `RF[14] = 0xFFF` then the result of reading process for `RS1 = 13` and `RS2 = 14` is `0x20` and `0xFFF` respectively. Step 4 belongs to this phase, in the schematic.
 
 ### Execute
 
-
+In this phase (usually) 2 inputs will be fed in the ALU and proper calculations will be done to produce the final result. Also another parallel calculation is needed for conditional branches to determine whether it is taken or not. Step 5 belongs to this phase in the picture.
 
 ### Write register file
 
-
+Last but not least is the Write-back to register file process, also called WB step.
 
 ## Hands-on lab 5
 
