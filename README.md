@@ -811,4 +811,4 @@ To wrap things up here's the final code of the 6th lab which describes how to cr
 # Acknowledgements
 - [Kunal Ghosh](https://github.com/kunalg123), Co-founder, VSD Corp. Pvt. Ltd.
 - [Steve Hoover](https://github.com/stevehoover), Founder, Redwood EDA
-- [Shivani Shah](https://github.com/shivanishah269), VSD Corp. Pvt. Ltd.
+- [Shivani Shah](https://github.com/shivanishah269), Research Scholar at IIIT Bangalore
